@@ -1,8 +1,86 @@
-## Composer
-##
-## The composer.lock file is ignored by default. This is completely up to you if
-## it should be committed to the repository or not. For more information on why
-## it is ignored by default: https://getcomposer.org/doc/02-libraries.md#lock-file
-############
+## gitignore for PHP Libraries
+#
+# The settings in this file are intended to be reasonable defaults for a general
+# PHP library. There is no way this file could be comprehensive and still be
+# considered a bootstrap skeleton. Instead, the settings here will cover your
+# basics and provide you the resources you need to customize it to suit the
+# specific needs of your project.
+#
+## Additional Resources
+#
+#  - https://github.com/github/gitignore
+#
+################################################################################
+
+################################################################################
+## Table Of Contents
+################################################################################
+#
+# 1. Composer
+# 2. Operating System
+# 3. Local Test Configurations
+# 4. Tools
+#
+################################################################################
+# 1. Composer
+#
+#    The composer.lock file is ignored by default. This is completely up to you
+#    if it should be committed to the repository or not. For more information on
+#    why it is ignored by default:
+#
+#        https://getcomposer.org/doc/02-libraries.md#lock-file
+################################################################################
 /vendor/*
 composer.lock
+
+################################################################################
+# 2. Operating System
+################################################################################
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+################################################################################
+# 3. Local Test Configurations
+#
+#    These settings assume that you have added the .dist extension to your test
+#    configuration files and do not want to commit your local .xml version.
+################################################################################
+phpcs.xml
+phpdoc.xml
+phpdox.xml
+phpmd.xml
+phpunit.xml
+
+################################################################################
+# 4. Tools
+#
+#    The settings here ignore common files that are created by the development
+#    you use that should not be committed.
+################################################################################
+*~
+*.swp
+*.swo
+*.sublime-*
+*.stTheme.cache
+*.tmlanguage.cache
+*.tmPreferences.cache
+.settings/*
+.idea/*
+nbproject/*
+.vscode
+.sass-cache/
