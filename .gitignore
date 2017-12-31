@@ -1,0 +1,8 @@
+## Composer
+##
+## The composer.lock file is ignored by default. This is completely up to you if
+## it should be committed to the repository or not. For more information on why
+## it is ignored by default: https://getcomposer.org/doc/02-libraries.md#lock-file
+############
+/vendor/*
+composer.lock
