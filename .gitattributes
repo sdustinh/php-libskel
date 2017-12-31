@@ -1,0 +1,186 @@
+## gitattributes for PHP Libraries
+#
+# These settings are reasonable defaults for your library. They are specifically
+# geared for PHP files but common files associated with PHP projects have also
+# been included.
+#
+# All of the files have been divided into the general categories they fit in to
+# make things easier for you to maintain. There are some files that are placed
+# into categories that could easily belong to another category so I have just
+# tried to make it as logical as possible.
+#
+## Additional Resources
+#
+#  - https://git-scm.com/docs/gitattributes
+#  - https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
+#  - https://github.com/alexkaratarakis/gitattributes
+#
+################################################################################
+
+################################################################################
+## Default Settings
+#
+# Auto Detect
+#    This is the default setting for all files NOT defined belong. Line endings
+#    will automatically be handled for files detected as text and all files
+#    detected as binary will be untouched.
+#
+# Default EOL
+#    All files have their default end of line character set so that unless
+#    specifically set to something else, they will all be the same.
+#
+* text=auto eol=lf
+################################################################################
+
+################################################################################
+## Table Of Contents
+################################################################################
+#
+# 1. General
+# 2. Archives
+# 3. Configuration
+# 4. Documentation
+# 5. Executable
+# 6. Fonts
+# 7. Graphics
+# 8. Source
+# 9. Templates
+#
+################################################################################
+# 1. General
+#
+#    The files listed here could fit into many categories. Rather than have you
+#    trying to hunt down which category they fit in, they have been placed into
+#    a general purpose category.
+################################################################################
+*.csv text
+*.txt text
+
+################################################################################
+# 2. Archives
+################################################################################
+*.7z  binary
+*.gz  binary
+*.jar binary
+*.rar binary
+*.tar binary
+*.zip binary
+
+################################################################################
+# 3. Configuration
+################################################################################
+*.cfg          text
+*.cnf          text
+*.conf         text
+*.config       text
+*.neon         text
+*.yaml         text
+*.yml          text
+.editorconfig  text
+.gitattributes text
+.gitconfig     text
+.gitignore     text
+.htaccess      text
+.php_cs        text
+Makefile       text
+
+################################################################################
+# 4. Documentation
+################################################################################
+*.markdown   text
+*.md         text
+*.mdown      text
+AUTHORS      text
+CHANGELOG    text
+CONTRIBUTING text
+INSTALL      text
+LICENSE      text
+*README*     text
+TODO         text
+
+################################################################################
+# 5. Executable
+################################################################################
+*.bat  text eol=crlf
+*.exe  binary
+*.phar text
+*.sh   text eol=lf
+
+################################################################################
+# 6. Fonts
+################################################################################
+*.ttf   binary
+*.eot   binary
+*.otf   binary
+*.woff  binary
+*.woff2 binary
+
+################################################################################
+# 7. Graphics
+################################################################################
+*.ai   binary
+*.bmp  binary
+*.eps  binary
+*.gif  binary
+*.ico  binary
+*.jng  binary
+*.jp2  binary
+*.jpg  binary
+*.jpeg binary
+*.jpx  binary
+*.jxr  binary
+*.pdf  binary
+*.png  binary
+*.psb  binary
+*.psd  binary
+*.svg  text
+*.svgz binary
+*.tif  binary
+*.tiff binary
+*.wbmp binary
+*.webp binary
+
+################################################################################
+# 8. Source
+#
+#    Files listed in this category are intended to be generally what you would
+#    find in a PHP project as a maintained file. They may fit into other
+#    categories, but it is easier to group them all here.
+################################################################################
+*.bat      text eol=crlf
+*.coffee   text
+*.css      text
+*.htm      text
+*.html     text
+*.inc      text
+*.ini      text
+*.js       text
+*.json     text
+*.jsx      text
+*.less     text
+*.lock     text
+*.php      text
+*.pl       text
+*.po       text
+*.py       text
+*.rb       text
+*.sass     text
+*.scm      text
+*.scss     text
+*.sh       text eol=lf
+*.sql      text
+*.xml      text
+*.xml.dist text
+
+################################################################################
+# 9. Templates
+################################################################################
+*.ctp        text
+*.ejs        text
+*.haml       text
+*.handlebars text
+*.jade       text
+*.mustache   text
+*.tmpl       text
+*.tpl        text
+*.twig       text
