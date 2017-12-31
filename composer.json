@@ -1,0 +1,13 @@
+{
+  "name": "sdustinh/php-libskel",
+  "description": "A bootstrap PHP library skeleton.",
+  "type": "library",
+  "homepage": "https://github.com/sdustinh/php-libskel",
+  "support": {
+    "issues": "https://github.com/sdustinh/php-libskel/issues"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
